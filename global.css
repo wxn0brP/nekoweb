@@ -49,51 +49,6 @@ nav a {
     font-weight: bold;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto 20px;
-    width: 150px;
-    cursor: pointer;
-    animation: pulseTilt 3s infinite alternate ease-in-out;
-    transition: all 0.8s ease;
-    position: relative;
-}
-
-@keyframes pulseTilt {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-
-    50% {
-        transform: scale(1.05) rotate(2deg);
-    }
-
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-.tooltip {
-    position: absolute;
-    background: #ff69b4;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    user-select: none;
-    white-space: nowrap;
-    z-index: 10;
-}
-
-iframe {
-    display: block;
-    margin: 20px auto;
-    border: 4px inset silver;
-}
-
 footer {
     text-align: center;
     padding: 20px;
