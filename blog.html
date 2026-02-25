@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon - Blog</title>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="shortcut icon" href="hatwoo.png" type="image/x-icon" />
+    <style>
+        .countdown-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            border: 3px solid hotpink;
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            min-width: 80px;
+            box-shadow: 0 0 10px hotpink;
+        }
+
+        .countdown-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: hotpink;
+            text-shadow: 0 0 10px hotpink;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            color: #ff69b4;
+            text-transform: uppercase;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            color: hotpink;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px hotpink, 0 0 10px hotpink;
+            }
+
+            to {
+                text-shadow: 0 0 20px hotpink, 0 0 30px hotpink;
+            }
+        }
+
+        .next-event {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- GitHub https://github.com/wxn0brP/nekoweb -->
+    <div class="wrapper">
+        <header>
+            <h1>🎩 Blog 🎩</h1>
+            <p class="subtitle blink">Something mysterious is brewing...</p>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="buttons.html">Buttons</a>
+            <a href="#">Blog</a>
+        </nav>
+
+        <main>
+            <p style="text-align: center;">
+                The next digital artifact will be unveiled at:<br>
+                <strong>Wednesday, 22:15</strong>
+            </p>
+
+            <div class="countdown-container">
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="message">✨ Stay tuned, wanderer! ✨</p>
+            <p class="next-event" id="next-event-info"></p>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2026 Hatwoo World. Some rights probably reserved.<br>
+                Made with caffeine and questionable life choices.
+            </p>
+        </footer>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+
+</html>
